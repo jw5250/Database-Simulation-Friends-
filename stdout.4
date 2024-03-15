@@ -1,0 +1,90 @@
+error: argument "parens!" is invalid
+error: handle "functional" is already in use
+Statistics:  10 people, no friendships
+Amici> + "friend" "abe" "anthony"
+abe and anthony are now friends.
+Amici> + "size" "abe"
+abe (A Lincoln) has 1 friend
+Amici> + "friend" "honest" "abe"
+honest and abe are now friends.
+Amici> + "friend" "abe" "honest"
+abe and honest are already friends.
+Amici> + "friend" "abe" "abolitionist"
+abe and abolitionist are now friends.
+Amici> + "stats"
+Statistics:  10 people, 3 friendships
+Amici> + "print" "abe"
+abe (A Lincoln) has 3 friends
+	anthony (A Blinken)
+	honest (A Lincoln)
+	abolitionist (A Lincoln)
+Amici> + "print" "safety"
+safety (B Safe) has no friends
+Amici> + "print" "Haskell"
+error: handle "Haskell" is unknown
+Amici> + "friend" "concurrent" "functional"
+concurrent and functional are now friends.
+Amici> + "friend" "safety" "abe"
+safety and abe are now friends.
+Amici> + "friend" "safety" "anthony"
+safety and anthony are now friends.
+Amici> + "friend" "safety" "Crocks"
+safety and Crocks are now friends.
+Amici> + "friend" "safety" "rpn"
+safety and rpn are now friends.
+Amici> + "friend" "safety" "functional"
+safety and functional are now friends.
+Amici> + "friend" "safety" "concurrent"
+safety and concurrent are now friends.
+Amici> + "stats"
+Statistics:  10 people, 10 friendships
+Amici> + "print" "safety"
+safety (B Safe) has 6 friends
+	abe (A Lincoln)
+	anthony (A Blinken)
+	Crocks (C Language)
+	rpn (FORTH Language)
+	functional (ML Language)
+	concurrent (Erlang Language)
+Amici> + "unfriend" "abe" "safety"
+abe and safety are no longer friends.
+Amici> + "print" "safety"
+safety (B Safe) has 5 friends
+	anthony (A Blinken)
+	Crocks (C Language)
+	rpn (FORTH Language)
+	functional (ML Language)
+	concurrent (Erlang Language)
+Amici> + "stats"
+Statistics:  10 people, 9 friendships
+Amici> + "friend" "monadic" "anthony"
+monadic and anthony are now friends.
+Amici> + "friend" "monadic" "Crocks"
+monadic and Crocks are now friends.
+Amici> + "friend" "monadic" "rpn"
+monadic and rpn are now friends.
+Amici> + "friend" "monadic" "functional"
+monadic and functional are now friends.
+Amici> + "friend" "monadic" "concurrent"
+monadic and concurrent are now friends.
+Amici> + "stats"
+Statistics:  10 people, 14 friendships
+Amici> + "unfriend" "safety" "anthony"
+safety and anthony are no longer friends.
+Amici> + "unfriend" "safety" "Crocks"
+safety and Crocks are no longer friends.
+Amici> + "unfriend" "safety" "rpn"
+safety and rpn are no longer friends.
+Amici> + "unfriend" "safety" "functional"
+safety and functional are no longer friends.
+Amici> + "unfriend" "safety" "concurrent"
+safety and concurrent are no longer friends.
+Amici> + "unfriend" "abe" "Crocks"
+abe and Crocks are not friends.
+Amici> + "stats"
+Statistics:  10 people, 9 friendships
+Amici> + "init"
+System re-initialized
+Amici> + "stats"
+Statistics:  no people, no friendships
+Amici> + "quit"

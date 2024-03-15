@@ -1,0 +1,7 @@
+        //If input greater than the max amount of characters is read, while loop is read until there are no more characters before another input could be made.
+        //Ignoring comments:
+                //Check if # exists at some point, set the index of # at a location where a command should stop parsing.
+                        //Doubles as finding the command size!
+        //Parsing entire set of commands:
+                //First always defines a command.
+                //Everything between the first string and the string with # in front (or none at all is a not string.)

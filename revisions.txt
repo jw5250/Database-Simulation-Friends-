@@ -1,0 +1,83 @@
+commit 65173e7854c1889e1ef2e9ab94f62db6ea0834c8
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Tue Nov 28 18:27:01 2023 -0500
+
+    Fixed memory issues discovered by Valgrind. Strings were being allocated in blocks of the size of char* + 1 instead of the actual string length.
+
+commit 78a2a6c5c14d113f397f668b681a3e12f782dfef
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 22:32:18 2023 -0500
+
+    Added revisions.txt
+
+commit e64f500e786be1725e7259e4946f5fcd4091b3d9
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 22:31:38 2023 -0500
+
+    Finished documentation for amici.c
+
+commit 1b0564af59e4e1fdd92ad9b804373560a763b46b
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 21:59:54 2023 -0500
+
+    Fixed the UI to fit that of the tests.
+
+commit 71647a0b439d244445a3d894876c89cd4cdb741e
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 19:05:40 2023 -0500
+
+    Fixed all memory issues with the shell. Currently still needs to be tested to make sure the output/logic fits as close to what's wanted as possible
+
+commit 886a152c22802319163e4292dcd78e230213a66a
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 05:40:56 2023 -0500
+
+    Fixed bug in user.c where it would display "1 friends" instead of "1 friend"
+
+commit 84cd790a50eec2a431379934b44fe9f2fe692c38
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Wed Nov 22 05:37:45 2023 -0500
+
+    Fixed all memory leaks/other bugs. Changed parameter in the delete function of user ADT to just delete based on the address of the memory instead of that of the original parameter's location. This fixed a memory bug. Also renamed the function that removes a single element at some index in array.h for the sake of consistency. Functions integrating the command line into the database and the other ADTs works properly.
+
+commit c890ec3fca046d0af76f767ef2ba24b492996321
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Tue Nov 21 23:39:29 2023 -0500
+
+    Fixed syntax bugs. Now ready to test the logistics of the untested code.
+
+commit d70c1b17d20bde42395a6747473bc58589346039
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Tue Nov 21 23:33:51 2023 -0500
+
+    Finished writing untested code for the interaction between the commands and the main database. Needs to be tested.
+
+commit 00f6f68f094b69f0b57bbe861ef6a774567fdb24
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Tue Nov 21 23:33:16 2023 -0500
+
+    Put the array ADT into its own file.
+
+commit a0db7d7bbd67c36c5c8b56c3721da0413bb33eef
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Tue Nov 21 13:33:49 2023 -0500
+
+    Finished testing the remove element function from array.h. As of now, finished all funtions of user ADT. Said functions are all currently untested.
+
+commit a864ec8fb049570a36575c3c9fe7511570e00ded
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Sat Nov 18 16:19:07 2023 -0500
+
+    Finished writing the arrayADT with additional functionalities. Said functions are not properly tested yet. Finished writing untested command struct to handle shell functions. As of now, need to write in the actual functionalities.
+
+commit dafe43b09d1c4ea0cd37b29ab1b27d0934f29015
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Fri Nov 17 19:54:28 2023 -0500
+
+    Prototyped the shell, finished functions to be used for checking the arguments. Built an array ADT that is currently untested.
+
+commit af83e68afa6387b565cc04d2df2828def9483761
+Author: Justin Wu <jw5250@rit.edu>
+Date:   Fri Nov 17 18:22:47 2023 -0500
+
+    Added amici.c

@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Run all Amici examples, saving stdout and stderr output, and comparing
+# that to the example output
+#
+
+n=1
+while [ -f input.$n ]
+do
+	echo Running $n
+
+	# get the argument list if there is one
+	if [ -f args.$n ]
+	then
+		args="`cat args.$n`"
+	else
+		args=""
+	fi
+
+	# run and save the output
+	./amici $args < input.$n > out.$n 2> err.$n
+
+	# compare the results
+	cmp stdout.$n out.$n
+	cmp stderr.$n err.$n
+
+	# move to the next test
+	n="`expr $n + 1`"
+done
